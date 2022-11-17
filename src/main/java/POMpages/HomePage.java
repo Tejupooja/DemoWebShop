@@ -9,8 +9,8 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(linkText = "Books")
+
+	@FindBy(xpath = "(//a[contains(text(),'Books')])[1]")
 	private WebElement ClickonBooksMenu;
 
 	public WebElement getClickonBooksMenu() {
