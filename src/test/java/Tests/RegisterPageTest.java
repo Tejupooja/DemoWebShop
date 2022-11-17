@@ -7,6 +7,7 @@ import POMpages.RegisterPage;
 import genericLibrary.Base_Test;
 
 public class RegisterPageTest extends Base_Test{
+	@Test
 	public void registertestExecution() {
 		RegisterPage register = new RegisterPage(driver);
 		register.getRegisterLink().click();
