@@ -22,4 +22,4 @@ public class LoginPageTest extends Base_Test {
 		login.getClickOnLoginButton().click();
 		Reporter.log("Clicking on Login Button");
 	}
-}
+	}		

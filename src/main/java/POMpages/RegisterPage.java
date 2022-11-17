@@ -12,7 +12,6 @@ public class RegisterPage extends Base_Test {
 	public RegisterPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
 	@FindBy(xpath = "//a[text()='Register']")
 	private WebElement RegisterLink;
 
@@ -35,6 +34,7 @@ public class RegisterPage extends Base_Test {
 		return EnterFirstName;
 	}
 
+	
 	@FindBy(id = "LastName")
 	private WebElement EnterLastName;
 
