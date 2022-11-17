@@ -1,5 +1,6 @@
 package Tests;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import POMpages.LoginPage;
@@ -10,9 +11,15 @@ public class LoginPageTest extends Base_Test {
 	public void LogintestExecution() {
 		LoginPage login = new LoginPage(driver);
 		login.getLoginlink().click();
-		login.getEmail().sendKeys("tejaswini38@gmail.com");
-		login.getPassword().sendKeys("tejupooja");
-		login.getClickOnLoginButton().click();
+		Reporter.log("Clicking on login link");
 
+		login.getEmail().sendKeys("teju95@gmail.com");
+		Reporter.log("Entered Email in Email textfield");
+
+		login.getPassword().sendKeys("tejupooja");
+		Reporter.log("Entered Password in password textfield");
+
+		login.getClickOnLoginButton().click();
+		Reporter.log("Clicking on Login Button");
 	}
 }
