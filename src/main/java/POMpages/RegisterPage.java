@@ -62,6 +62,7 @@ public class RegisterPage extends Base_Test {
 	public WebElement getEnterConfirmPassword() {
 		return EnterConfirmPassword;
 	}
+
 	@FindBy(name = "register-button")
 	private WebElement ClickOnRigisterButton;
 
@@ -69,5 +70,4 @@ public class RegisterPage extends Base_Test {
 		return ClickOnRigisterButton;
 	}
 
-	
 }
