@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 import POMpages.RegisterPage;
 import genericLibrary.Base_Test;
 
-public class RegisterPageTest extends Base_Test{
+public class RegisterPageTest extends Base_Test {
 	@Test
 	public void registertestExecution() {
 		RegisterPage register = new RegisterPage(driver);
 		register.getRegisterLink().click();
 		Reporter.log("Clicking on Register Link");
-		
+
 		register.getRadiobutton().click();
 		Reporter.log("Clicking on radio button");
 

@@ -34,4 +34,18 @@ public class ShoppingCartPage extends Base_Test {
 		return ClickOnCheckoutbutton;
 	}
 
+	@FindBy(id = "CountryId")
+	private WebElement CountryDropdown;
+
+	public WebElement getCountryDropdown() {
+		return CountryDropdown;
+	}
+
+	@FindBy(xpath = "//option[text()='India']")
+	private WebElement selectedcountry;
+
+	public WebElement getSelectedcountry() {
+		return selectedcountry;
+	}
+
 }
